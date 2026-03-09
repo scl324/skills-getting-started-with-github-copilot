@@ -6,6 +6,9 @@ client = TestClient(app)
 
 
 def test_get_activities():
+    # Test the retrieval of all activities.
+    # This ensures the /activities endpoint returns a dictionary of activities.
+
     # Arrange
     # No setup needed for this test
 
@@ -18,6 +21,9 @@ def test_get_activities():
 
 
 def test_signup_activity():
+    # Test signing up a user for an activity.
+    # This ensures the /activities/{activity_name}/signup endpoint works correctly.
+
     # Arrange
     email = "test@example.com"
     activity_name = "Chess Club"
@@ -32,6 +38,9 @@ def test_signup_activity():
 
 
 def test_unregister_activity():
+    # Test unregistering a user from an activity.
+    # This ensures the /activities/{activity_name}/participants endpoint removes the user.
+
     # Arrange
     email = "test@example.com"
     activity_name = "Chess Club"
